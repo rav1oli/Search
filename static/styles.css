@@ -41,8 +41,8 @@
 
 
 /* main body below nav-bar */
-.search-area {
-    height: 60vh;
+#search-area {
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,15 +50,24 @@
 }
 
 
+/* form area */
+#form-area {
+    display: flex;
+    width: 100vw; 
+    max-width: 550px;   
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 15px
+}
+
+
 /* related to the search bar */
 #searchbar-wrapper {
     display: flex; 
-    width: 100vw; 
-    max-width: 550px;
     justify-content: center; 
     align-items: center;
-    padding: 0px 15px;
     position: relative;
+    width: 100%;
 }
 
 #searchbar{
@@ -77,6 +86,26 @@
 }
 
 
+/* related to buttons below search bar */
+#button-wrapper {
+    padding: 30px;
+}
+
+#button-wrapper > .button {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 4px;
+    border: none;
+    outline: none;
+    background-color: #f8f9fa;
+    border-radius: 3px
+}
+
+#button-wrapper > .button:hover {
+    box-shadow: 0 0 2px lightslategrey;
+}
+
+
 /* icon styling */
 .icon {
     width: 1em;
@@ -85,19 +114,20 @@
 }
 
 #search_icon {
-    left: 30px
+    left: 15px;
 }
 
 #mic_icon {
-    right: 55px
+    right: 40px;
 }
 #camera_icon {
-    right: 30px
+    right: 15px;
 }
+
 
 /* google logo styling */
 #google_logo {
-    width: 220px;
+    width: 300px;
     height: auto;
     margin-bottom: 15px
 }
