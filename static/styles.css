@@ -1,0 +1,111 @@
+/* resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* page header styling */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    align-items: center;
+}
+
+.header-links {
+    display: flex;
+    list-style: none;
+    padding: 0px
+}
+
+.header-links > li {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.header-links > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-links > li > a:hover {
+    text-decoration: underline;
+}
+
+
+/* main body below nav-bar */
+.search-area {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* related to the search bar */
+#searchbar-wrapper {
+    display: flex; 
+    width: 100vw; 
+    max-width: 550px;
+    justify-content: center; 
+    align-items: center;
+    padding: 0px 15px;
+    position: relative;
+}
+
+#searchbar{
+    border: solid 1px lightgrey;
+    border-radius: 1000px;
+    padding: 10px 65px 10px 40px;
+    flex: 1;
+}
+
+#searchbar:hover {
+    box-shadow: 0 0 5px lightgrey;
+}
+
+#searchbar:focus {
+    outline: none;
+}
+
+
+/* icon styling */
+.icon {
+    width: 1em;
+    height: 1em;
+    position: absolute;
+}
+
+#search_icon {
+    left: 30px
+}
+
+#mic_icon {
+    right: 55px
+}
+#camera_icon {
+    right: 30px
+}
+
+/* google logo styling */
+#google_logo {
+    width: 220px;
+    height: auto;
+    margin-bottom: 15px
+}
+
+
+
+
+
+
+
+
