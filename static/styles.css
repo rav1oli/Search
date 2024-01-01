@@ -1,52 +1,78 @@
 /* resets */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh
+}
 
 /* page header styling */
 .page-header {
     display: flex;
     justify-content: space-between;
-    padding: 6px;
+    padding: 10px;
     align-items: center;
 }
 
-.header-links {
+.nav-links {
     display: flex;
     list-style: none;
-    padding: 0px
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
 }
 
-.header-links > li {
-    padding: 10px;
+.nav-text {
+    padding: 12px;
     font-size: 14px;
 }
 
-.header-links > li > a {
+.nav-text > a {
     text-decoration: none;
     color: black;
 }
 
-.header-links > li > a:hover {
+.nav-text > a:hover {
     text-decoration: underline;
 }
 
+.nav-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%
+}
+
+.nav-img > img {
+    width: 100%;
+    height: 100%;
+}
+
+#dots {
+    padding: 12px;
+}
+
+#pfp {
+    margin: 0px 3px;
+    padding: 2px
+}
+
+.nav-img:hover {
+    background-color: rgba(60,64,67,.08);
+}
 
 /* main body below nav-bar */
 #search-area {
-    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex: 1;
 }
 
 
@@ -57,7 +83,7 @@
     max-width: 550px;   
     flex-direction: column;
     align-items: center;
-    padding: 0px 15px
+    padding: 0px 30px;
 }
 
 
@@ -132,6 +158,56 @@
     margin-bottom: 15px
 }
 
+
+/* footer styling */
+.footer-panel {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3px 20px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #dadce0;
+}
+
+#United-Kingdom {
+    padding: 15px 10px;
+    font-size: 15px;
+}
+
+#leaf_img {
+    height: 25px;
+    width: auto;
+    margin-right: -5px;
+}
+
+#left_footer_items { 
+    flex-wrap: wrap;
+    min-width: 30%;
+    justify-content: flex-start;
+    order: 1;
+}
+
+#center_footer_items {
+    justify-content: center;
+    order: 2;
+}
+
+@media (max-width: 1200px) {
+    #center_footer_items {
+        order: 0;
+        width: 100%;
+    }
+    .footer-panel {
+        justify-content: space-evenly;
+    }
+}
+
+#right_footer_items { 
+    flex-wrap: wrap;
+    min-width: 30%;
+    justify-content: flex-end;
+    order: 3;
+}
 
 
 
