@@ -10,33 +10,31 @@
     <body class="search_body">
         <nav class="page-header">
             <ul class="nav-links">
-                <li class="nav-text"><a href="https://about.google/">About</a></li>
-                <li class="nav-text"><a href="https://store.google.com/">Store</a></li>
             </ul>
             <ul class="nav-links">
                 <li class="nav-text"><a href="advanced_search.html">Advanced Search</a></li>
-                <li class="nav-text"><a href="image_search.html">Images</a></li>
+                <li class="nav-text"><a href="index.html">Google Search</a></li>
                 <li class="nav-img" id="dots"><img src="static/images/google_dots_good.png" alt="dots"></li>
                 <li class="nav-img" id="pfp"><img src="static/images/blank_pfp_good.png" alt="Profile Picture"></li>
             </ul>
         </nav>
 
         <main id="search-area">
-            <a href="index.html"><img src="static/images/festive-google.jpg" alt="festive google logo" id="google_logo"></a>
+            <div id="google_wrapper">
+                <a href="index.html"><img src="static/images/Google_img_logo.png" alt="festive google logo" id="google_logo"></a>
+                <p id="images_text">images</p>
+            </div>
             <form id="form-area" action="https://www.google.com/search" method="get">
                 <div id="searchbar-wrapper">
                     <img src="static/icons/search.svg" class="icon" id="search_icon">
-                    <img src="static/icons/mic-fill.svg" class="icon" id="mic_icon">
-                    <img src="static/icons/camera.svg" class="icon" id="camera_icon">
+                    <img src="static/icons/mic-fill.svg" class="icon" id="mic_icon" style="right: 67px">
+                    <img src="static/icons/camera.svg" class="icon" id="camera_icon" style="right: 42px">
                     <input name="q" id="searchbar" type="text" placeholder="" autofocus>
-                </div>
-                <div id="button-wrapper">
-                    <button class="button" type="submit" value="submit">Google Search</button>
-                    <button class="button" formaction="https://www.google.com/search" formmethod="get" name="btnI" value="I'm Feeling Lucky">I'm Feeling Lucky</button>
-                </div>
+                    <button class="blank_button icon" type="submit" formaction="https://www.google.com/search" name="tbm" value="isch">
+                        <img src="static/icons/blue_search.svg">
+                    </button>
             </form>
         </main>
-
         <footer>
             <div class="footer-panel">
                 <p id="United-Kingdom">United Kingdom</p>

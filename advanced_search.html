@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="static/styles.css">
+        <link rel="stylesheet" href="static/advanced_search_styles.css">
+        <title>Search</title>
+    </head>
+
+    <body>
+        <nav class="page-header">
+            <ul class="nav-links">
+                <li><a href="index.html"><img src="static/images/Google_img_logo.png" width="100px" height="auto"></a></li>
+            </ul>
+            <ul class="nav-links">
+                <li class="nav-text"><a href="index.html">Google Search</a></li>
+                <li class="nav-text"><a href="image_search.html">Images</a></li>
+                <li class="nav-img" id="dots"><img src="static/images/google_dots_good.png" alt="dots"></li>
+                <li class="nav-img" id="pfp"><img src="static/images/blank_pfp_good.png" alt="Profile Picture"></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2 style="color: red; margin: 20px;">Advanced Search</h2>
+            <hr style="color: lightgray; opacity: 0.5;">
+            <form action="https://www.google.co.uk/search">
+                <table class="table upper-table">
+                    <thead>
+                        <td class="left-header">Find pages with...</td>
+                        <td></td>
+                        <td class="right-header">To do this in the search box...</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="left-col">all these words:</td>
+                            <td class="middle-col"><input name="as_q" type="text"></td>
+                            <td class="right-col">Type the important words: tri-colour rat terrier</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col">this exact word or phrase:</td>
+                            <td class="middle-col"><input name="as_epq" type="text"></td>
+                            <td class="right-col">Put exact words in quotes: "rat terrier"</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col">any of these words:</td>
+                            <td class="middle-col"><input name="as_oq" type="text"></td>
+                            <td class="right-col">Type OR between all the words you want: miniature OR standard</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col">none of these words:</td>
+                            <td class="middle-col"><input name="as_eq" type="text"></td>
+                            <td class="right-col">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</td>
+                        </tr>
+                        <!-- <tr>
+                            <td class="left-col">numbers ranging from:</td>
+                            <td class="middle-col double-input">
+                                <input name="" type="text">
+                                <span>to</span>
+                                <input name="" type="text">
+                            </td>
+                            <td class="right-col">Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</td>
+                        </tr> -->
+                        <tr>
+                            <td class="left-col"></td>
+                            <td class="middle-col"><button type="submit">Advanced Search</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+                <!--<table class="table lower-table">
+                    <thead>
+                        <td class="left-header">Then narrow your results by...</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="left-col">language:</td>
+                            <td class="middle-col"><input name="" type="menu"></td>
+                            <td class="right-col">Find pages in the language that you select.</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col">region:</td>
+                            <td class="middle-col"><input name="" type="menu"></td>
+                            <td class="right-col">Find pages published in a particular region.</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col">last update:</td>
+                            <td class="middle-col"><input name="" type="menu"></td>
+                            <td class="right-col">Find pages updated within the time that you specify.</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col">site or domain:</td>
+                            <td class="middle-col"><input name="" type="text"></td>
+                            <td class="right-col">Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col">terms appearing:</td>
+                            <td class="middle-col"><input name="" type="menu"></td>
+                            <td class="right-col">Search for terms in the whole page, page title or web address, or links to the page you're looking for.</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col">file type:</td>
+                            <td class="middle-col"><input name="" type="menu"></td>
+                            <td class="right-col">Find pages in the format that you prefer.</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col"><a href="https://support.google.com/websearch/answer/">usage rights:</a></td>
+                            <td class="middle-col"><input name="" type="menu"></td>
+                            <td class="right-col">Find pages that you are free to use yourself.</td>
+                        </tr>
+                    </tbody>
+                </table>-->
+            </form>
+        </main>
+        <footer>
+            <div class="footer-panel">
+                <p id="United-Kingdom">United Kingdom</p>
+            </div>
+            <div class="footer-panel">
+                <ul class="nav-links" id="left_footer_items">
+                    <li class="nav-text"><a href="https://support.google.com/">Help</a></li>
+                    <li class="nav-text"><a href="https://policies.google.com/privacy">Privacy</a></li>
+                    <li class="nav-text"><a href="https://policies.google.com/terms">Terms</a></li>
+                </ul>
+                <ul class="nav-links" id="center_footer_items">
+
+                </ul>
+                <ul class="nav-links" id="right_footer_items">
+
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

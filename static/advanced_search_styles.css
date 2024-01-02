@@ -1,0 +1,52 @@
+hr {
+    color: lightgray; 
+    opacity: 0.5;
+}
+
+.table {
+    padding: 20px;
+    width: 100%;
+}
+.table td {padding: 4px 15px;}
+
+thead {font-size: 16px;}
+
+.left-col {
+    font-size: 14px;
+    width: 200px;
+}
+
+.right-col {
+    font-size: 12px;
+    font-family: monospace;
+    color: #777
+}
+
+@media (max-width: 1000px) {
+    .right-col, .right-header {display: none;}
+}
+
+.middle-col {
+    width: 500px;
+    position: relative;
+}
+.middle-col input {
+    width: 100%;
+    padding: 5px;
+}
+.middle-col button {
+    float: right;
+    padding: 8px;
+    background-color: #357ae8;
+    border: 1px solid #357ae8;
+    border-radius: 2px;
+    color: white;
+}
+
+.middle-col button:hover {
+    border: 1px solid #2f5bb7;
+    background-image: -moz-linear-gradient(top,#4d90fe,#357ae8);
+}
+
+.double-input {display: flex; width: 100%}
+.double-input span {padding: 5px 10px;}
